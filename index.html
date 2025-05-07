@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PACIFIC PHOTOGRAPHY - Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #003366; /* Deep blue background */
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #002244; /* Darker shade of blue for header */
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header img {
+      height: 50px;
+      width: auto;
+    }
+
+    .nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: white;
+      background-color: #0055a5; /* Button color */
+      padding: 10px 20px;
+      margin: 0 15px;
+      border-radius: 5px;
+      font-size: 1.2em;
+    }
+
+    .nav a:hover {
+      background-color: #003b6f;
+    }
+
+    .nav a.active {
+      background-color: #003b6f; /* Dark background for active button */
+      color: white;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 400px;
+      background-image: url('images/picture1.jpg'); /* Background image */
+      background-size: cover;
+      background-position: center;
+      margin-top: 20px;
+    }
+
+    .services {
+      padding: 40px;
+      text-align: center;
+      background-color: #004477; /* Lighter shade of blue for section */
+    }
+
+    .services h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .services ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .services li {
+      font-size: 1.5em;
+      margin: 10px 0;
+    }
+
+    .services p {
+      font-size: 1.2em;
+      line-height: 1.5;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Footer Styling */
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px;
+      background-color: #002244; /* Darker shade of blue for footer */
+      color: white;
+      margin-top: 40px;
+    }
+
+    /* Each Footer Section */
+    .footer-section {
+      flex: 1;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .footer-section h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    .footer-section p {
+      font-size: 1.1em;
+      margin: 5px 0;
+    }
+
+    .footer-section img {
+      height: 50px;
+      width: auto;
+      margin-bottom: 15px;
+    }
+
+    .footer-section .footer-text {
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PACIFIC PHOTOGRAPHY</h1>
+    <img src="images/Logo_Image.jpg" alt="Logo"> <!-- Logo image -->
+  </header>
+
+  <!-- Navigation Bar -->
+  <div class="nav">
+    <a href="index.html" class="active">Home</a> <!-- Active class on Home page -->
+    <a href="about.html">About</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact Us</a>
+</div>
+
+  <div class="hero-image"></div>
+
+  <div class="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Arial Drone Images and Videos</li>
+      <li>Interior Room Images</li>
+      <li>Interior and Exterior Image Slideshows</li>
+    </ul>
+    <p>
+      At Pacific Photography, we specialize in capturing stunning real estate photos that highlight the beauty and details of every property. Whether you're selling your home, marketing a rental property, or showcasing a commercial space, we provide high-quality photography and drone services that make a lasting impression. Contact us today to schedule your session!
+    </p>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-section">
+      <img src="images/Logo_Image.jpg" alt="Logo"> <!-- Logo in footer -->
+      <div class="footer-text">Making Real Estate Photography Easier</div>
+    </div>
+
+    <div class="footer-section">
+      <h3>Information</h3>
+      <p>Pacific Photography Inc.</p>
+      <p>878 Seymor Street</p>
+      <p>Vancouver,BC</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>236-512-0707</p>
+      <p>pacific_photography500@outlook.com</p>
+    </div>
+  </footer>
+
+  <script>
+    // Get the current page's URL
+    const currentPage = window.location.pathname.split("/").pop();
+
+    // Select all nav links
+    const navLinks = document.querySelectorAll(".nav a");
+
+    // Loop through each nav link
+    navLinks.forEach(link => {
+      const linkHref = link.getAttribute('href');
+      // If the link's href matches the current page, add the active class
+      if (linkHref === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  </script>
+</body>
+</html>

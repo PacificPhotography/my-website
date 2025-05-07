@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - PACIFIC PHOTOGRAPHY</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #003366; /* Deep blue background */
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #002244; /* Darker shade of blue for header */
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header img {
+      height: 50px;
+      width: auto;
+    }
+
+    .nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: white;
+      background-color: #0055a5; /* Button color */
+      padding: 10px 20px;
+      margin: 0 15px;
+      border-radius: 5px;
+      font-size: 1.2em;
+    }
+
+    .nav a:hover {
+      background-color: #003b6f;
+    }
+
+    .nav a.active {
+      background-color: #003b6f; /* Dark background for active button */
+      color: white;
+    }
+
+    .contact-header {
+      padding: 40px;
+      text-align: center;
+      background-color: #004477; /* Lighter shade of blue for section */
+    }
+
+    .contact-header h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .contact-header p {
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+
+    .contact-form {
+      width: 50%;
+      margin: 0 auto;
+      background-color: #002244;
+      padding: 30px;
+      border-radius: 8px;
+    }
+
+    .contact-form label {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1em;
+      color: #333;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      height: 150px;
+    }
+
+    .contact-form button {
+      padding: 15px 30px;
+      background-color: #0055a5;
+      color: white;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact-form button:hover {
+      background-color: #003b6f;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px;
+      background-color: #002244; /* Darker shade of blue for footer */
+      color: white;
+      margin-top: 40px;
+    }
+
+    .footer-section {
+      flex: 1;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .footer-section h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    .footer-section p {
+      font-size: 1.1em;
+      margin: 5px 0;
+    }
+
+    .footer-section img {
+      height: 50px;
+      width: auto;
+      margin-bottom: 15px;
+    }
+
+    .footer-section .footer-text {
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PACIFIC PHOTOGRAPHY</h1>
+    <img src="images/Logo_Image.jpg" alt="Logo"> <!-- Logo image -->
+  </header>
+
+  <!-- Navigation Bar -->
+  <div class="nav">
+    <a href="index.html">Home</a> <!-- Home button -->
+    <a href="about.html">About</a> <!-- About button -->
+    <a href="reviews.html">Reviews</a> <!-- Reviews button -->
+    <a href="contact.html" class="active">Contact Us</a> <!-- Contact Us button -->
+  </div>
+
+  <div class="contact-header">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Reach out to us for any inquiries or to schedule your session today.</p>
+  </div>
+
+  <div class="contact-form">
+    <form action="#" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-section">
+      <img src="images/Logo_Image.jpg" alt="Logo"> <!-- Logo in footer -->
+      <div class="footer-text">Making Real Estate Photography Easier</div>
+    </div>
+
+    <div class="footer-section">
+      <h3>Information</h3>
+      <p>Pacific Photography Inc.</p>
+      <p>878 Seymor Street</p>
+      <p>Vancouver, BC</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>236-512-0707</p>
+      <p>pacific_photography500@outlook.com</p>
+    </div>
+  </footer>
+
+</body>
+</html>
+

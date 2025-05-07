@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - PACIFIC PHOTOGRAPHY</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #003366; /* Deep blue background */
+      color: white;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #002244; /* Darker shade of blue for header */
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header img {
+      height: 50px;
+      width: auto;
+    }
+
+    .nav {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: white;
+      background-color: #0055a5; /* Normal button color */
+      padding: 10px 20px;
+      margin: 0 15px;
+      border-radius: 5px;
+      font-size: 1.2em;
+    }
+
+    .nav a:hover {
+      background-color: #003b6f; /* Darker hover color */
+    }
+
+    .nav a.active {
+      background-color: #003b6f; /* Dark background for active button */
+      color: white; /* Ensure text is white */
+    }
+
+    /* Parallax Hero Section */
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 400px;
+      background-image: url('images/picture3.jpg'); /* Changed to picture3.jpg */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed; /* Parallax effect */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white; /* Text color is now white */
+      text-align: center;
+      z-index: -1;
+    }
+
+    .hero-section h2 {
+      font-size: 3em;
+      margin: 0;
+      color: white; /* Ensure header text is white */
+    }
+
+    .hero-section p {
+      font-size: 1.5em;
+      margin-top: 10px;
+      color: white; /* Ensure paragraph text is white */
+    }
+
+    /* About Us Content */
+    .about-content {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px;
+      background-color: #004477; /* Lighter blue for content background */
+    }
+
+    .about-section {
+      flex: 1;
+      padding: 20px;
+      margin-right: 20px;
+    }
+
+    .about-section h3 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .about-section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+
+    .about-section .cta-button {
+      padding: 15px 30px;
+      background-color: #0055a5;
+      color: white;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+
+    .about-section .cta-button:hover {
+      background-color: #003b6f;
+    }
+
+    /* Footer Styling */
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 20px;
+      background-color: #002244; /* Darker shade of blue for footer */
+      color: white;
+      margin-top: 40px;
+    }
+
+    .footer-section {
+      flex: 1;
+      padding: 0 20px;
+      text-align: center;
+    }
+
+    .footer-section h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+    }
+
+    .footer-section p {
+      font-size: 1.1em;
+      margin: 5px 0;
+    }
+
+    .footer-section img {
+      height: 50px;
+      width: auto;
+      margin-bottom: 15px;
+    }
+
+    .footer-section .footer-text {
+      font-size: 1.1em;
+      margin-top: 15px;
+      font-style: italic;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PACIFIC PHOTOGRAPHY</h1>
+    <img src="images/Logo_Image.jpg" alt="Logo"> <!-- Logo image -->
+  </header>
+
+  <!-- Navigation Bar -->
+  <div class="nav">
+    <a href="index.html">Home</a> <!-- Home button (no active class) -->
+    <a href="about.html" class="active">About</a> <!-- About button with active class -->
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact Us</a> <!-- Contact Us button -->
+  </div>
+
+  <!-- Parallax Hero Section with Background Image -->
+  <div class="hero-section">
+    <div>
+      <h2>About Us</h2>
+      <p>Discover how Pacific Photography professionals can capture stunning pictures of your property.</p>
+    </div>
+  </div>
+
+  <!-- About Us Content -->
+  <div class="about-content">
+    <div class="about-section">
+      <h3>An Independent Canadian Owned Business</h3>
+      <h2>Our goal is to capture the best angles of your property to showcase its quality and value...</h2>
+      <button class="cta-button" onclick="window.location.href='contact.html'">Get a Free Quote Today</button>
+    </div>
+    <div class="about-section">
+      <h3>Why Choose Us?</h3>
+      <p>
+        At Pacific Photography, we are passionate about real estate photography. Our expert team uses high-quality equipment, including drones for aerial shots, to ensure that every property we capture looks its best. We understand that high-quality images are key to attracting potential buyers or renters, and we are here to help you make that impact. Let us showcase the beauty of your property.
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-section">
+      <img src="images/Logo_Image.jpg" alt="Logo"> <!-- Logo in footer -->
+      <p class="footer-text">Making real estate photography easier</p> <!-- New Footer Text -->
+    </div>
+
+    <div class="footer-section">
+      <h3>Information</h3>
+      <p>Pacific Photography Inc.</p>
+      <p>878 Seymor Street</p>
+      <p>Vancouver, BC</p>
+    </div>
+
+    <div class="footer-section">
+      <h3>Contact Us</h3>
+      <p>236-512-0707</p>
+      <p>pacific_photography500@outlook.com</p>
+    </div>
+  </footer>
+
+</body>
+</html>
